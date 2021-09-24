@@ -9,6 +9,7 @@
   grid-template-rows: 1fr 200px;
   grid-template-columns: 1fr 2fr;
   padding-right: 120px;
+  text-align: right;
 }
 .album-image-container {
   grid-column-start: 1;
@@ -24,12 +25,18 @@
   grid-row-end: 2;
 }
 
-.review-text-container {
+.title-info-container > h3 {
+  margin: 0;
+}
+
+.profile-review-text-container {
   display: inline-grid;
   background-color: #180c6a;
   height: 200px;
   justify-items: center;
+  margin-left: 30px;
 }
+
 .review-box {
   font-size: 18px;
   overflow: hidden;
@@ -39,25 +46,58 @@
   justify-self: flex-start;
 }
 
-#album-title {
+.album-title {
   font-size: 24px;
+  text-align: right;
 }
 
-#artist-name {
-  font-size: 14px;
+.artist-name {
+  font-size: 16px;
+  text-align: right;
 }
 
-.score {
+p.profile-score {
   color: #ffea00;
   font-size: 36px;
   font-weight: bold;
+  text-shadow: 0px 0px 5px #ffea00;
 }
+
 .username {
   margin-top: 60px;
 }
 
 .rating-user-bar > * {
+  margin-left: 30px;
   margin-top: 60px;
   margin-bottom: 10px;
   align-self: flex-end;
+}
+
+button.edit-button,
+button.delete-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80px;
+  cursor: pointer;
+}
+
+button.delete-button {
+  margin-left: 10px;
+}
+
+div.post-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.post-buttons > div > a {
+  text-decoration: none;
+}
+
+div.post-buttons-container {
+  display: flex;
+  flex-direction: row;
 }

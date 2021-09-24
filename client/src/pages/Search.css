@@ -1,6 +1,8 @@
 .album-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .search-input {
@@ -10,4 +12,26 @@
   margin-right: 10px;
   width: 300px;
   font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.search-input:active,
+.search-input:focus {
+  background-color: #180c6a;
+}
+
+form.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+button.search-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
